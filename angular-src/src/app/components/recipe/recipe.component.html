@@ -2,8 +2,8 @@
   <div class="row content">          
     <div class="col-md-5 clearfix">
       <div class="container-fuild">
-        <img class="img-responsive img-rounded img-fluid btn-block" src="{{post.images[post.images.length-1] || 'http://localhost:8080/placeholder.JPG' }}" alt="Image Here"><br>
-        <app-upload-file [url]="'http://localhost:8080/upload/post-pic'" (notifyImageAdded)="onNotifyImageAdded($event,post.images)"></app-upload-file> 
+        <img class="img-responsive img-rounded img-fluid btn-block" src="{{post.images[post.images.length-1] || '/placeholder.JPG' }}" alt="Image Here"><br>
+        <app-upload-file [url]="'/upload/post-pic'" (notifyImageAdded)="onNotifyImageAdded($event,post.images)"></app-upload-file> 
       </div>
     </div>
     <div class="col-md-7">
@@ -51,7 +51,7 @@
         <div class="row content">
           <div class="col-md-5 clearfix">
             <div class="container-fuild">
-              <img class="img-responsive img-rounded img-fluid btn-block" src="{{instruction.images[instruction.images.length-1] || 'http://localhost:8080/placeholder.JPG' }}" alt="Image Here"><br>
+              <img class="img-responsive img-rounded img-fluid btn-block" src="{{instruction.images[instruction.images.length-1] || '/placeholder.JPG' }}" alt="Image Here"><br>
               <app-upload-file [url]="'http://localhost:8080/upload/post-pic'" (notifyImageAdded)="onNotifyImageAdded($event,instruction.images)"></app-upload-file> 
             </div>          
           </div>
@@ -83,8 +83,8 @@
       <div class="row content">
         <div class="col-md-5 clearfix">
           <div class="container-fuild">
-            <img class="img-responsive img-rounded img-fluid btn-block" src="{{newInstruction.images[newInstruction.images.length-1] || 'http://localhost:8080/placeholder.JPG' }}" alt="Image Here"><br>
-            <app-upload-file [url]="'http://localhost:8080/upload/post-pic'" (notifyImageAdded)="onNotifyImageAdded($event,newInstruction.images)"></app-upload-file> 
+            <img class="img-responsive img-rounded img-fluid btn-block" src="{{newInstruction.images[newInstruction.images.length-1] || '/placeholder.JPG' }}" alt="Image Here"><br>
+            <app-upload-file [url]="'/upload/post-pic'" (notifyImageAdded)="onNotifyImageAdded($event,newInstruction.images)"></app-upload-file> 
           </div>  
         </div>
         <br>

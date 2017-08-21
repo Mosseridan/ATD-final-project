@@ -7,7 +7,7 @@ const User = require('../models/user');
 const Followers = require('../models/followers');
 const utils = require('../models/utils');
 
-const defult_profile_pic = 'http://localhost:8080/defult_profile_pic.jpg'
+const defult_profile_pic = '/defult_profile_pic.jpg'
 
 function createMsgCallbackForDelete(res, msg) {
     return (err, raw) => {

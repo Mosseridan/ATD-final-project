@@ -25,13 +25,7 @@ export class AuthService {
     let headers = new Headers();
     headers.append('Authorization', this.getToken());
     headers.append('Content-type', 'application/json');
-
-    try {
-      //return this.http.post('/users/register', user, {headers: headers}).map((res) => res.json());      
-      return this.http.post('http://localhost:8080/' + url, data, { headers: headers }).map((res) => res.json());
-    } catch (err) {
-      return this.http.post('http://localhost:8080/' + url, data, { headers: headers }).map((res) => res.json());
-    }
+    return this.http.post('/' + url, data, { headers: headers }).map((res) => res.json());
   }
 
   registerUser(user) {

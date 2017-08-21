@@ -5,7 +5,7 @@ const fs = require('fs');
 const multer = require('multer');
 const User = require('../models/user');
 
-const defaultProfilePicUrl = 'http://localhost:8080/defult_profile_pic.jpg';
+const defaultProfilePicUrl = '/defult_profile_pic.jpg';
 
 // Upload Profile Picture
 router.post('/profile-pic', passport.authenticate('jwt', { session: false }), (req, res, next) => {
